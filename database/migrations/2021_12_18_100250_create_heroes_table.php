@@ -15,8 +15,8 @@ class CreateHeroesTable extends Migration
     {
         Schema::create('heroes', function (Blueprint $table) {
             $table->id();
-            $table->string("name");
-            $table->string("type");
+            $table->text("name");
+            $table->text("type");
             $table->integer("start_ms");
             $table->timestamp("created_at");
         });

@@ -9,7 +9,7 @@ class Hero extends Model
 
     protected $table = 'heroes';
     public const CREATED_AT = 'created_at';
-    public const UPDATED_AT = 'null';
+    public const UPDATED_AT = null;
 
     /**
      * The attributes that are mass assignable.
