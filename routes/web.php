@@ -20,6 +20,6 @@ $router->get('/', function () use ($router) {
 $router->get('heroes', 'HeroController@showAll');
 
 $router->post('hero/add', 'HeroController@add');
-$router->post('hero/edit', 'HeroController@edit');
+$router->post('hero/{hero_id}/edit', 'HeroController@edit');
 $router->get('hero/{hero_id}', 'HeroController@show');
 $router->delete('hero/{hero_id}/delete', 'HeroController@delete');
